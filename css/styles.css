@@ -81,11 +81,29 @@ body {
   }
 
   .nav-links {
+    display: none;
     position: absolute;
+  }
+
+  .open-nav-links {
+    display: block;
     top: 0.5px;
-    right: 0px;
     background-color: #101935;
     color: #F2FDFF;
+    animation: open-nav 0.5s 0s 1 normal ease-out forwards;
+  }
+
+  @keyframes open-nav {
+    0% {
+      right: -1000px;
+      opacity: 0;
+    }
+
+    100% {
+      right: 0px;
+      opacity: 1; 
+      visibility: visible;
+    }
   }
 
   .cancel-icon {
