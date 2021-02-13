@@ -44,7 +44,9 @@ body {
   #nav {
     padding: 1rem 2rem;
     background-color: #F2FDFF;
+    position: relative;
   }
+
   .mobile-nav-links {
     margin-top: 0.5rem;
     margin-left: auto;
@@ -74,6 +76,19 @@ body {
   }
 
   .nav-links {
-    display: none;
+    position: absolute;
+    right: 1px;
+    background-color: #101935;
+    color: #F2FDFF;
+  }
+
+  .nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links li {
+    padding: 1rem 16rem 1rem 1rem;
   }
 }
