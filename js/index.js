@@ -8,5 +8,7 @@ menu.addEventListener("click", () => {
 });
 
 sideNav.addEventListener("click", () => {
-  sideNav.classList.toggle("open-nav-links");
+  setTimeout(() => {
+    sideNav.classList.toggle("open-nav-links");
+  }, 500);
 });
