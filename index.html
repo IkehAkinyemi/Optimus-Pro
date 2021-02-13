@@ -20,7 +20,7 @@
       </span>
     </aside>
 
-    <nav id="nav">
+    <nav id="nav" class="nav-desktop">
       <div class="logo-container">
         <img src="./assets/Screenshot from 2020-12-21 23-01-09.png" alt="aside__logo" id="main-logo">
       </div>
@@ -39,12 +39,48 @@
 
       <div class="nav-links">
         <p class="cancel-icon">X</p>
-        
+
         <ul class="nav-links-collections">
           <li class="nav-link home">Home</li>
-          <li class="nav-link about-us">About us</li>
-          <li class="nav-link markets">Markets</li>
-          <li class="nav-link academy">Academy</li>
+
+          <li class="nav-link about-us">
+            About us
+            <div class="nav-modal about-us--modal">
+              <ul class="about-us-links">
+                <li class="about-us-link__item who-we-are">Who we are</li>
+                <li class="about-us-link__item what-we-do">What we do</li>
+                <li class="about-us-link__item our-vision">Our vision</li>
+                <li class="about-us-link__item our-mission">Our mission</li>
+                <li class="about-us-link__item our-goals">Our goals</li>
+                <li class="about-us-link__item our-values">Our values</li>
+                <li class="about-us-link__item meet-the-team">Meet the team</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-link markets">
+            Markets
+
+            <div class="nav-modal markets--modal">
+              <ul class="markets-links">
+                <li class="markets-link__item cryptocurrency">cryptocurrency(Bitcoin)</li>
+                <li class="markets-link__item forex">Forex</li>
+                <li class="markets-link__item stock">Stock</li>
+                <li class="markets-link__item commodities">Commodities</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-link academy">
+            Academy
+
+            <div class="nav-modal academy--modal">
+              <ul class="academy-links">
+                <li class="academy-link__item course">Courses</li>
+              </ul>
+            </div>
+          </li>
+
           <li class="nav-link why-optimus-pro">Why Optimus Pro</li>
           <li class="nav-link optimus-pro-nation">Optimus Pro Nation</li>
           <li class="nav-link blog">Blog</li>

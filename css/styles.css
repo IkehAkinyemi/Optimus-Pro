@@ -37,6 +37,8 @@ body {
 
 #nav {
   display: flex;
+  padding: 1rem 2rem;
+  background-color: #F2FDFF;
 }
 
 #main-logo {
@@ -45,11 +47,115 @@ body {
   border-radius: 50%;
 }
 
+.nav-links-collections {
+  display: flex;
+}
+
+.nav-modal {
+  position: absolute;
+  margin-left: -1rem;
+}
+
+.about-us {
+  position: relative;
+}
+
+.about-us--modal {
+  border: 1px solid;
+  width: 200px;
+  padding-left: 0rem;
+}
+
+
+.mobile-nav-links {
+  display: none;
+}
+
+.cancel-icon {
+  display: none;
+}
+
+.nav-links .status {
+  display: none;
+}
+
+.nav-links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+@media only screen and (min-width: 913px) {
+  .logo-container {
+    margin-right: auto;
+  }
+
+  .nav-link {
+    margin-top: 1rem;
+  }
+
+  .nav-links-collections li {
+    margin-right: 2rem;
+    padding: 0rem 0.1rem;
+  }
+
+  .nav-links-collections li:hover {
+    border-bottom: 2px solid #101935;
+  }
+
+  .nav-modal li:hover {
+    border-bottom: unset;
+  }
+
+  .home {
+    margin-left: 5rem;
+    border-bottom: 2px solid #101935;
+  }
+
+  .nav-links-collections .contact-us {
+    margin-right: unset;
+  }
+
+  .about-us--modal, .markets--modal, .academy--modal {
+    display: none;
+    background-color: #101935;
+    color: #F2FDFF;
+    z-index: 99;
+    margin-top: 0.3rem;
+    padding: 1rem 0rem;
+  }
+
+  .about-us-links li, .markets-links li, .academy-links li {
+    padding: 0.2rem 0.6rem;
+    width: 90%;
+  }
+
+  .academy-links li {
+    width: 80%;
+  }
+
+  .about-us-links li:hover, .markets-links li:hover, .academy-links li:hover {
+    background-color: #564787;
+  }
+
+  #account-container-desktop {
+    margin-left: 3rem;
+  }
+}
+
+
+/* ============================= Mobile view ==================================== */
+
 @media only screen and (max-width: 912px) {
   #nav {
     padding: 1rem 2rem;
     background-color: #F2FDFF;
     position: relative;
+  }
+
+  .nav-modal {
+    display: none;
   }
 
   .mobile-nav-links {
@@ -85,6 +191,14 @@ body {
     position: absolute;
   }
 
+  .nav-links-collections {
+    display: unset;
+  }
+
+  .nav-links-collections li {
+    margin-right: unset;
+  }
+
   .open-nav-links {
     display: block;
     top: 0.5px;
@@ -107,6 +221,7 @@ body {
   }
 
   .cancel-icon {
+    display: block;
     margin-right: 5rem;
     margin-bottom: 0rem;
     direction: rtl;
@@ -114,12 +229,6 @@ body {
     transform: scale(1.3);
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
-  }
-
-  .nav-links ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
   }
 
   .nav-links li {
@@ -131,7 +240,8 @@ body {
     background-color: #564787;
   }
 
-  .status {
+  .nav-links .status {
+    display: block;
     margin-top: 1rem;
     padding-left: 1rem;
     margin-bottom: 1rem;
