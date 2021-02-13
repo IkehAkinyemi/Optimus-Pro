@@ -15,4 +15,21 @@ sideNav.addEventListener("click", () => {
 });
 
 // control desktop modal pop-in and pop-out
-const 
+const navLinks = document.querySelectorAll(".nav-link");
+
+navLinks.forEach(li => {
+  li.addEventListener("mouseover",(e) => {
+    if ( window.innerWidth > 912 ) {
+      if (e.target.closest(".nav-link")) {
+        console.log(e.target.closest(".nav-link").firstElementChild)
+        e.target.closest(".nav-link").firstElementChild.style.display = "block";
+      }
+    }
+  });
+
+  li.addEventListener("mouseout",(e) => {
+    if ( window.innerWidth > 912 ) {
+      e.target.closest(".nav-link").firstElementChild.style.display = "none";
+    }
+  });
+});
