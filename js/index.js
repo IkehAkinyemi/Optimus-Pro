@@ -10,5 +10,5 @@ menu.addEventListener("click", () => {
 sideNav.addEventListener("click", () => {
   setTimeout(() => {
     sideNav.classList.toggle("open-nav-links");
-  }, 700);
+  }, 500);
 });
