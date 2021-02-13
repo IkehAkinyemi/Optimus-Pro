@@ -1,0 +1,59 @@
+
+body {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+[alt="aside__logo"] {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+#aside {
+  background-color: #101935;
+  padding: 0.5rem 6rem;
+  color: #F2FDFF;
+  display: flex;
+  justify-content: center;
+}
+
+#aside span {
+  display: block;
+}
+
+.aside__website-link {
+  margin-top: 0.2rem;
+  margin-left: 0.5rem;
+  font-weight: bolder;
+}
+
+#nav {
+  display: flex;
+}
+
+#main-logo {
+  transform: scale(1.5);
+}
+
+@media only screen and (max-width: 912px) {
+  #nav {
+    margin: 1rem 2rem;
+  }
+  .mobile-nav-links {
+    margin-left: auto;
+    display: flex;
+  }
+  
+  [alt="menu"] {
+    width: 30px;
+    height: 30px;
+    border: 2.3px solid rgb(15, 15, 15);
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
