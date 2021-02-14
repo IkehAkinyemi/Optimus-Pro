@@ -9,7 +9,7 @@ menu.addEventListener("click", () => {
   sideNav.classList.toggle("open-nav-links");
 });
 
-cancelBtn.addEventListener("click", () => {
+sideNav.addEventListener("click", () => {
   setTimeout(() => {
     sideNav.classList.toggle("open-nav-links");
   }, 10);
