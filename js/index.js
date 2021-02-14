@@ -4,6 +4,7 @@ const sideNav = document.querySelector(".nav-links");
 const navLinks = document.querySelectorAll(".nav-link");
 const body = document.querySelector("body");
 const avatar = document.querySelector("#account-container-desktop");
+let slideIndex = 0;
 
 // control mobile view navlink slide-in and slide-out animations
 menu.addEventListener("click", () => {
@@ -21,7 +22,7 @@ const mouseOverEvt = (e) => {
   if (liFlag &&  window.innerWidth < 912) {
     e.target.closest(".nav-link").lastElementChild.style.display = "block";
   }
-}
+};
 
 navLinks.forEach((li) => {
   li.addEventListener("mouseover", mouseOverEvt);
@@ -64,3 +65,26 @@ navLinks.forEach(li => {
     }
   });
 });
+
+
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slideIndex++;
+
+  if (slideIndex > slides.length) {slideIndex = 1};
+
+  slides[slideIndex-1].style.display = "block";
+
+  
+
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+
+};
