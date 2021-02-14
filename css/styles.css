@@ -9,11 +9,12 @@ a {
   color: unset;
 }
 
-body {
+body, html {
   margin: 0rem;
   padding: 0rem;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 [alt="aside__logo"] {
