@@ -230,6 +230,7 @@ body, html {
 
   #account-container-desktop .status {
     display: none;
+    z-index: 99;
   }
 
   .status .sign-out {
@@ -294,6 +295,7 @@ body, html {
   .nav-links {
     display: none;
     position: absolute;
+    z-index: 99;
   }
 
   .nav-links-collections {
