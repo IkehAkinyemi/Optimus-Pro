@@ -99,62 +99,64 @@ body, html {
 }
 
 
-   /* =============================== Carousel styles starts here ========================================== */
+/* =============================== Carousel styles starts here ========================================== */
+ .slideshow-container {
+  width: 100%;
+  position: relative;
+}
 
-   .slideshow-container {
-    width: 100%;
-    position: relative;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+[alt="slide-imgs"] {
+  width: 100%;
+  height: 600px;
+}
 
-  [alt="slide-imgs"] {
-    width: 100%;
-    height: 600px;
-  }
-  
-  .mySlides::before {
-    content: "";
-    position: absolute;
-    background: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    top: 0;
-    bottom: 0;
-  }
-  
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    font-size: larger;
-    width: 600px;
-    transform: scale(1.2);
-  }
-  
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
+.mySlides::before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  font-size: larger;
+  width: 600px;
+  transform: scale(1.2);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.introduction {
+  display: flex;
+}
 
 /* ============================= Desktop screens ==================================== */
 
@@ -243,6 +245,20 @@ body, html {
   .status .sign-out:hover {
     background-color: #bfd9dd;
     cursor: pointer;
+  }
+
+  .intro-img-container {
+    width: 80%;
+  }
+
+  [alt="intro"] {
+    width: 100%;
+  }
+
+  .intro-paras {
+    padding: 4rem 2rem;
+    background-color: #166088;
+    color: #F2FDFF;
   }
 
 }
@@ -394,6 +410,25 @@ body, html {
     top: 40%;
     left: unset;
     transform: scale(0.9);
+  }
+
+  .introduction {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .intro-img-container {
+    width: 100%;
+  }
+
+  [alt="intro"] {
+    width: 100%;
+  }
+
+  .intro-paras {
+    padding: 4rem 2rem;
+    background-color: #166088;
+    color: #F2FDFF;
   }
 
 }
