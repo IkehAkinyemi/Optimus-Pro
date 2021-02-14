@@ -3,6 +3,7 @@ const cancelBtn = document.querySelector('.cancel-icon');
 const sideNav = document.querySelector(".nav-links");
 const navLinks = document.querySelectorAll(".nav-link");
 const body = document.querySelector("body");
+const avatar = document.querySelector("#account-container-desktop");
 
 // control mobile view navlink slide-in and slide-out animations
 menu.addEventListener("click", () => {
@@ -35,6 +36,19 @@ navLinks.forEach((li) => {
 });
 
 // control desktop modal pop-in and pop-out
+
+avatar.addEventListener("mouseover", (e) => {
+  if ( window.innerWidth > 912 ) {
+    e.target.closest("#account-container-desktop").lastElementChild.style.display = "block";
+  }
+});
+
+avatar.addEventListener("mouseout", (e) => {
+  if ( window.innerWidth > 912 ) {
+    e.target.closest("#account-container-desktop").lastElementChild.style.display = "none";
+  }
+});
+
 navLinks.forEach(li => {
   li.addEventListener("mouseover",(e) => {
     if ( window.innerWidth > 912 ) {

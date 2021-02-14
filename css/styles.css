@@ -57,9 +57,17 @@ body, html {
   display: flex;
 }
 
-.nav-modal {
+.nav-modal, .status {
   position: absolute;
   margin-left: -1rem;
+}
+
+.status {
+  margin-left: -6rem;
+  background-color: #101935;
+  width: 140px;
+  padding-bottom: 0.7rem;
+  text-align: center;
 }
 
 .about-us {
@@ -147,7 +155,32 @@ body, html {
   }
 
   #account-container-desktop {
+    margin-top: 0.7rem;
     margin-left: 3rem;
+  }
+
+  #account {
+    transform: scale(1.2);
+  }
+
+  #account:hover {
+    cursor: pointer;
+  }
+
+  #account-container-desktop .status {
+    display: none;
+  }
+
+  .status .sign-out {
+    border-radius: 0.3rem;
+    padding: 9px 18px;
+    border: none;
+    margin-top: 0.7rem;
+  }
+
+  .status .sign-out:hover {
+    background-color: #bfd9dd;
+    cursor: pointer;
   }
 }
 
@@ -270,6 +303,11 @@ body, html {
     margin-top: 1rem;
     padding-left: 1rem;
     margin-bottom: 1rem;
+    position: unset;
+    margin-left: unset;
+    width: unset;
+    padding-bottom: unset;
+    text-align: unset;
   }
 
   .status .sign-out {
