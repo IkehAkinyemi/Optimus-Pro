@@ -61,7 +61,6 @@ body {
 }
 
 .about-us--modal {
-  border: 1px solid;
   width: 200px;
   padding-left: 0rem;
 }
@@ -95,12 +94,13 @@ body {
     margin-top: 1rem;
   }
 
-  .nav-links-collections li {
+  .nav-links-collections .nav-link {
     margin-right: 2rem;
     padding: 0rem 0.1rem;
   }
 
-  .nav-links-collections li:hover {
+  .nav-links-collections .nav-link:hover {
+    cursor: pointer;
     border-bottom: 2px solid #101935;
   }
 
@@ -126,17 +126,18 @@ body {
     padding: 1rem 0rem;
   }
 
-  .about-us-links li, .markets-links li, .academy-links li {
+  .about-us-links .about-us-link__item, .markets-links .markets-link__item, .academy-links .academy-link__item {
     padding: 0.2rem 0.6rem;
     width: 90%;
   }
 
-  .academy-links li {
-    width: 80%;
+  .academy-links .academy-link__item {
+    width: 75%;
   }
 
-  .about-us-links li:hover, .markets-links li:hover, .academy-links li:hover {
+  .about-us-links .about-us-link__item:hover, .markets-links .markets-link__item:hover, .academy-links li:hover {
     background-color: #564787;
+    cursor: pointer;
   }
 
   #account-container-desktop {
@@ -156,6 +157,7 @@ body {
 
   .nav-modal {
     display: none;
+    position: unset;
   }
 
   .mobile-nav-links {
@@ -195,10 +197,6 @@ body {
     display: unset;
   }
 
-  .nav-links-collections li {
-    margin-right: unset;
-  }
-
   .open-nav-links {
     display: block;
     top: 0.5px;
@@ -231,13 +229,30 @@ body {
     font-family: 'Montserrat', sans-serif;
   }
 
-  .nav-links li {
+  .nav-links .nav-link {
     padding: 1rem 16rem 1rem 1rem;
   }
 
-  .nav-links li:hover {
+  .nav-links .nav-link:hover {
     cursor: pointer;
     background-color: #564787;
+  }
+
+  .nav-modal {
+    margin-top: 0.5rem;
+  }
+
+  .about-us-links .about-us-link__item, .markets-links .markets-link__item, .academy-links .academy-link__item {
+    margin: 0rem 2rem;
+    padding: 0.3rem;
+    width: 100%;
+  }
+
+
+  .about-us-links .about-us-link__item:hover, .markets-links .markets-link__item:hover, .academy-links li:hover {
+    background-color: #DBCBD8;
+    color: #101935;
+    cursor: pointer;
   }
 
   .nav-links .status {
@@ -247,13 +262,13 @@ body {
     margin-bottom: 1rem;
   }
 
-  .status button {
+  .status .sign-out {
     border-radius: 0.3rem;
     padding: 9px 28px;
     border: none;
   }
 
-  .nav-links .status button:hover {
+  .nav-links .status .sign-out:hover {
     cursor: pointer;
     background-color: #bfd9dd;
   }
