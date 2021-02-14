@@ -15,13 +15,16 @@ cancelBtn.addEventListener("click", () => {
   }, 10);
 });
 
+const mouseOverEvt = (e) => {
+  const liFlag = Boolean(e.target.closest(".nav-link").lastElementChild?.className);
+  if (liFlag &&  window.innerWidth < 912) {
+    e.target.closest(".nav-link").lastElementChild.style.display = "block";
+  }
+}
+
 navLinks.forEach((li) => {
-  li.addEventListener("mouseover", (e) => {
-    const liFlag = Boolean(e.target.closest(".nav-link").lastElementChild?.className);
-    if (liFlag &&  window.innerWidth < 912) {
-      e.target.closest(".nav-link").lastElementChild.style.display = "block";
-    }
-  });
+  li.addEventListener("mouseover", mouseOverEvt);
+  li.addEventListener("click", mouseOverEvt);
 
   li.addEventListener("mouseout",(e) => {
     const liFlag = Boolean(e.target.closest(".nav-link").lastElementChild?.className);
