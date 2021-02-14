@@ -17,16 +17,16 @@ sideNav.addEventListener("click", () => {
 
 navLinks.forEach((li) => {
   li.addEventListener("mouseover", (e) => {
-    const liFlag = Boolean(e.target.closest(".nav-link").firstElementChild?.className);
+    const liFlag = Boolean(e.target.closest(".nav-link").lastElementChild?.className);
     if (liFlag &&  window.innerWidth < 912) {
-      e.target.closest(".nav-link").firstElementChild.style.display = "block";
+      e.target.closest(".nav-link").lastElementChild.style.display = "block";
     }
   });
 
   li.addEventListener("mouseout",(e) => {
-    const liFlag = Boolean(e.target.closest(".nav-link").firstElementChild?.className);
+    const liFlag = Boolean(e.target.closest(".nav-link").lastElementChild?.className);
     if (liFlag && window.innerWidth < 912 ) {
-      e.target.closest(".nav-link").firstElementChild.style.display = "none";
+      e.target.closest(".nav-link").lastElementChild.style.display = "none";
     }
   });
 });
@@ -35,15 +35,15 @@ navLinks.forEach((li) => {
 navLinks.forEach(li => {
   li.addEventListener("mouseover",(e) => {
     if ( window.innerWidth > 912 ) {
-      if (e.target.closest(".nav-link")) {
-        e.target.closest(".nav-link").firstElementChild.style.display = "block";
+      if (e.target.closest(".nav-link") && e.target.closest(".nav-link").lastElementChild.tagName === "DIV") {
+        e.target.closest(".nav-link").lastElementChild.style.display = "block";
       }
     }
   });
 
   li.addEventListener("mouseout",(e) => {
-    if ( window.innerWidth > 912 ) {
-      e.target.closest(".nav-link").firstElementChild.style.display = "none";
+    if ( window.innerWidth > 912 && e.target.closest(".nav-link").lastElementChild.tagName === "DIV") {
+      e.target.closest(".nav-link").lastElementChild.style.display = "none";
     }
   });
 });
