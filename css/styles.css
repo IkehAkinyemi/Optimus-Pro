@@ -248,6 +248,10 @@ body, html {
     margin-top: 0.5rem;
   }
 
+  .nav-links-collections .about-us, .nav-links-collections .markets, .nav-links-collections .academy {
+    border-bottom: 1.2px solid #F2FDFF;
+  }
+
   .about-us-links .about-us-link__item, .markets-links .markets-link__item, .academy-links .academy-link__item {
     margin: 0rem 2rem;
     padding: 0.3rem;
