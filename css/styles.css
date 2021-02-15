@@ -712,6 +712,7 @@ path {
 
   #footer {
     padding: 3rem 2rem;
+    padding-bottom: 0.1rem;
     color: #F2FDFF;
   }
 
