@@ -98,7 +98,6 @@ body, html {
   padding: 0;
 }
 
-
 /* =============================== Carousel styles starts here ========================================== */
  .slideshow-container {
   width: 100%;
@@ -156,6 +155,63 @@ body, html {
 
 .introduction {
   display: flex;
+}
+
+.optmius-pro-nation__header {
+  margin-top: 4rem;
+  padding-left: 3rem;
+  text-decoration: underline;
+  color: #101935;
+}
+
+.nation-collections {
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-evenly;
+}
+
+.nation-collections-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.nation-collections-item {
+  display: flex;
+  flex-direction: column;
+}
+
+[alt="star"] {
+  width: 17px;
+  height: 17px;
+}
+
+.optimus, .optimus-pro, .ethan-up, .level-up, .optimus-prime {
+  background-color: #08B2E3;
+  color: #F2FDFF;
+}
+
+.optimus-prime {
+  padding-bottom: 12rem;
+}
+
+.optimus-pro {
+  padding-bottom: 9rem;
+}
+
+.optimus {
+  padding-bottom: 6.5rem;
+}
+
+.level-up {
+  padding-bottom: 3.5rem;
+}
+
+.optimus-item, .optimus-pro-item, .ethan-up-item, .level-up-item, .optimus-prime-item {
+  margin-top: 0.7rem;
+  text-align: center;
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid #F2FDFF;
 }
 
 /* ============================= Desktop screens ==================================== */
@@ -429,6 +485,15 @@ body, html {
     padding: 4rem 2rem;
     background-color: #166088;
     color: #F2FDFF;
+  }
+
+  .nation-collections {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .nation-collections-container {
+    margin-top: 2rem;
   }
 
 }
