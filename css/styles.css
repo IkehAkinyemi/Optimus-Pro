@@ -351,6 +351,7 @@ path {
   border: none;
   color: #F2FDFF;
   font-size: medium;
+  cursor: pointer;
 }
 
 .arrow-right {
@@ -714,6 +715,10 @@ path {
     padding: 3rem 2rem;
     padding-bottom: 0.1rem;
     color: #F2FDFF;
+  }
+
+  .input-fields input {
+    padding: 0.8rem 5rem 0.8rem 1rem;
   }
 
   .arrow-up {
