@@ -653,7 +653,7 @@ path {
     width: unset;
     top: 40%;
     left: unset;
-    transform: scale(0.9);
+    transform: scale(1);
   }
 
   .introduction {
@@ -675,8 +675,13 @@ path {
     color: #F2FDFF;
   }
 
+  .intro-item {
+    font-size: small;
+  }
+
   .optmius-pro-nation__header {
     padding-left: 2rem;
+    font-size: 19px;
   }
 
   .nation-collections {
@@ -691,6 +696,10 @@ path {
   .testmonial {
     padding: 3rem 2rem;
     padding-right: 4rem;
+  }
+
+  .testmonial__header {
+    font-size: 19px;
   }
 
   #testmonial-container {
@@ -719,6 +728,10 @@ path {
 
   .contact-us-footer {
     padding: 3rem 2rem;
+  }
+
+  .footer-contact-us {
+    font-size: 19px;
   }
 
   .contacts {
