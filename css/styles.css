@@ -12,6 +12,7 @@ body, html {
   font-family: 'Poppins', sans-serif;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   outline: none;
+  scroll-behavior: smooth;
 }
 
 [alt="aside__logo"] {
@@ -312,7 +313,9 @@ path {
 #footer {
   background-color: #101935;
   padding: 3rem 3rem;
+  padding-bottom: 0rem;
   color: #F2FDFF;
+  position: relative;
 }
 
 .footer-links {
@@ -352,6 +355,28 @@ path {
 
 .arrow-right {
   transform: scale(1.2);
+}
+
+.bottom-footer-contents {
+  margin-top: 4rem;
+}
+
+.faq, .term-of-use, .privacy, .disclaimer {
+  text-decoration: underline;
+  margin-bottom: 2rem;
+}
+
+.arrow-up {
+  width: 50px;
+  height: 50px;
+  right: 2rem;
+  top: 3rem;
+  position: absolute;
+  background-color: #08B2E3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ============================= Desktop screens ==================================== */
@@ -688,6 +713,11 @@ path {
   #footer {
     padding: 3rem 2rem;
     color: #F2FDFF;
+  }
+
+  .arrow-up {
+    top: 1rem;
+    right: 1rem;
   }
 
 }
