@@ -162,7 +162,6 @@ body, html {
 }
 
 .optmius-pro-nation__header {
-  padding-left: 3rem;
   color: #101935;
   font-family: 'Dancing Script', cursive;
   color: goldenrod;
@@ -230,6 +229,7 @@ body, html {
 }
 
 .testmonial__header {
+  padding-left: 2.5rem;
   font-family: 'Dancing Script', cursive;
   color: goldenrod;
   text-transform: uppercase;
@@ -278,7 +278,7 @@ body, html {
 /* On hover, add a black background color with a little bit see-through */
 
 .contact-us-footer {
-  padding: 2rem 3rem;
+  padding: 2rem 0rem;
   font-family: 'Dancing Script', cursive;
   color: goldenrod;
   text-transform: uppercase;
@@ -289,6 +289,7 @@ body, html {
 .contact-links {
   display: flex;
   margin-bottom: 2rem;
+  margin-left: 2.5rem;
   justify-content: center;
 }
 .contacts {
@@ -688,6 +689,7 @@ path {
 
   .testmonial {
     padding: 3rem 2rem;
+    padding-right: 4rem;
   }
 
   #testmonial-container {
@@ -714,8 +716,8 @@ path {
     direction: unset;
   }
 
-  .contact-us {
-    padding: 0rem 2rem;
+  .contact-us-footer {
+    padding: 3rem 2rem;
   }
 
   .contacts {
