@@ -88,3 +88,29 @@ function showSlides() {
   setTimeout(showSlides, 4000); // Change image every 2 seconds
 
 };
+
+
+let testmonialSlideIndex = 1;
+testmonialShowSlides(testmonialSlideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  testmonialShowSlides(testmonialSlideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  testmonialShowSlides(testmonialSlideIndex = n);
+}
+
+function testmonialShowSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("testmonial-container");
+  if (n > slides.length) {testmonialSlideIndex = 1}
+  if (n < 1) {testmonialSlideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+
+  slides[testmonialSlideIndex - 1].style.display = "flex";
+}
