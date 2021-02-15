@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 a {
   text-decoration: none;
@@ -36,7 +37,6 @@ body, html {
 .aside__website-link {
   margin-top: 0.2rem;
   margin-left: 0.5rem;
-  font-weight: bolder;
 }
 
 #nav {
@@ -155,11 +155,19 @@ body, html {
   display: flex;
 }
 
+.optmius-pro-nation {
+  background-color: #efefef;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
 .optmius-pro-nation__header {
-  margin-top: 4rem;
   padding-left: 3rem;
-  text-decoration: underline;
   color: #101935;
+  font-family: 'Dancing Script', cursive;
+  color: goldenrod;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .nation-collections {
@@ -190,19 +198,23 @@ body, html {
 }
 
 .optimus-prime {
-  padding-bottom: 12rem;
+  padding-bottom: 17rem;
 }
 
 .optimus-pro {
-  padding-bottom: 9rem;
+  padding-bottom: 14rem;
 }
 
 .optimus {
-  padding-bottom: 6.5rem;
+  padding-bottom: 11rem;
 }
 
 .level-up {
-  padding-bottom: 3.5rem;
+  padding-bottom: 7rem;
+}
+
+.ethan-up {
+  padding-bottom: 3rem;
 }
 
 .optimus-item, .optimus-pro-item, .ethan-up-item, .level-up-item, .optimus-prime-item {
@@ -215,6 +227,14 @@ body, html {
 .testmonial {
   padding: 3rem 3rem;
 }
+
+.testmonial__header {
+  font-family: 'Dancing Script', cursive;
+  color: goldenrod;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 
 #testmonial-container {
   display: flex;
@@ -275,13 +295,19 @@ body, html {
   background-color: rgba(0,0,0,0.8);
 }
 
-.contact-us {
-  padding: 0rem 3rem;
+.contact-us-footer {
+  padding: 2rem 3rem;
+  font-family: 'Dancing Script', cursive;
+  color: goldenrod;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #eeeeee;
 }
 
 .contact-links {
   display: flex;
   margin-bottom: 2rem;
+  justify-content: center;
 }
 .contacts {
   height: 50px;
@@ -313,9 +339,10 @@ path {
 #footer {
   background-color: #101935;
   padding: 3rem 3rem;
-  padding-bottom: 0rem;
+  padding-bottom: 2rem;
   color: #F2FDFF;
   position: relative;
+  text-align: center;
 }
 
 .footer-links {
@@ -332,6 +359,17 @@ path {
 
 .subscription-email {
   margin-top: 4rem;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe {
+  text-align: center;
 }
 
 .input-fields input {
