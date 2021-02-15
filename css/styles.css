@@ -226,6 +226,7 @@ body, html {
 
 .testmonial {
   padding: 3rem 3rem;
+  padding-left: 0rem;
 }
 
 .testmonial__header {
@@ -246,6 +247,7 @@ body, html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 2rem;
 }
 
 .test-item {
@@ -263,7 +265,7 @@ body, html {
   color: #F2FDFF;
   padding: 1rem 1.5rem;
   border-radius: 0.3rem;
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
 }
 
 [alt="testmonial-imgs"] {
